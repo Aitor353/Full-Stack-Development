@@ -1,0 +1,90 @@
+.container div {
+    margin-bottom: 20px;
+}
+
+/* Grid One Styles*/
+
+.gridOne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Grid Two Styles*/
+
+.gridTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.gridTwo :nth-child(1) p {
+    background-color: red;
+}
+
+.gridTwo :nth-child(2) p {
+    background-color: blue;
+}
+
+.gridTwo :nth-child(3) p {
+    background-color: yellow
+}
+
+/* Grid Three Styles*/
+
+.gridThree {
+    width: 500px;
+    height: 300px;
+    background-color: lightgray;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+.gridThree_image img {
+    width: 500px;
+    height: 225px;
+    object-fit: cover;
+}
+
+/* Grid Four Styles*/
+
+.gridFour {
+    width: 500px;
+    background-color: green;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.gridFour #gridFour_child2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Grid Five Styles*/
+
+.gridFive {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.gridFive #gridFive_child2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.gridFive img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Grid Six Styles*/
+
+.gridSix {
+    width: 500px;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+} 
+
+.gridSix p {
+    font-family: "Josefin Sans";
+}

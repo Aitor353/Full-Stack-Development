@@ -20,13 +20,13 @@ function numAl() {
 
 // Menú deasayuno
 const aperitivos = {
-    Donut: 2.10,
-    Tostada: 2.35,
-    Helado: 2.75,
+    Zumo: 1.70,
+    Batido: 1.25,
+    Chocolate: 1.50,
     Nada : 0
 };
 
-const platoPrincipal = {
+const platosPrincipales = {
     Gofre: 5.00,
     Tortilla: 4.75,
     Crepe: 3.75,
@@ -34,10 +34,10 @@ const platoPrincipal = {
     Nada: 0
 };
 
-const bebidas = {
-    Zumo: 1.70,
-    Batido: 1.25,
-    Chocolate: 1.50,
+const platosSecundarios = {
+    Donut: 2.10,
+    Tostada: 2.35,
+    Helado: 2.75,
     Nada: 0
 };
 
@@ -91,16 +91,16 @@ function iterador(platos) {
 }
 
 function capitalizar(palabra) {
-    palabra = palabra.charAt(0).toUpperCase() + palabra.slice(1);;
+    palabra = palabra[0].toUpperCase() + palabra.slice(1);;
     return palabra;
     }
 
 function desayuno() {
     menu(aperitivos, "aperitivo");
 
-    menu(platoPrincipal, "plato principal");
+    menu(platosPrincipales, "plato principal");
 
-    menu(bebidas, "bebida");
+    menu(platosSecundarios, "plato secundario");
 }
 
 function comida() {
